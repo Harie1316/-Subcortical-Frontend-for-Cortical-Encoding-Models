@@ -38,13 +38,15 @@ Across N = 33 subjects, evaluated by leave-one-trial-out cross-validation:
 
 The learned subcortical frontend predicts EEG **2.1× better** than the mel-spectrogram baseline (paired *t*(32) = +8.15, *p* = 2.6×10⁻⁹; Wilcoxon *p* = 1.0×10⁻⁸; **31 of 33 subjects improved**).
 
-![Main results](figures/fig1_main_results.png)
+<img width="1093" height="443" alt="image" src="https://github.com/user-attachments/assets/c177e6f9-e839-407e-8fb9-7e236f966c9f" />
+
 
 *Panel A: Three-frontend comparison. The learned subcortical frontend significantly outperforms both the spectrogram baseline and the high-dimensional cochlea oracle. Panel B: Five-way ablation isolating the contributions of dimensionality and biological supervision.*
 
 ## Where on the scalp does the improvement live?
 
-![Topography](figures/fig2_topography.png)
+<img width="1057" height="318" alt="image" src="https://github.com/user-attachments/assets/cf44c7a1-1ed6-46bd-877c-3ed5225d48f3" />
+
 
 The subcortical frontend's advantage over the spectrogram is concentrated over central-parietal channels (panel C), exactly where auditory cortex projects on the scalp. This rules out generic noise reduction and demonstrates the improvement is auditory-cortex-specific.
 
@@ -68,7 +70,8 @@ The high-dimensional cochlea oracle (64 CFs × 77 lags = 4,928 weights per chann
 
 ## Subcortical student
 
-![Subcortical pipeline](figures/fig3_subcortical_pipeline.png)
+<img width="1093" height="493" alt="image" src="https://github.com/user-attachments/assets/cbb8d716-83f5-4407-b9af-0197aea1f86c" />
+
 
 *Panel A: Biophysical cochleagram (auditory nerve firing rate across 64 characteristic frequencies). Panel B: The learned student model (blue) reproduces the biophysical teacher (black) with mean held-out Pearson r = 0.9957 ± 0.0003 on 6 unseen trials.*
 
